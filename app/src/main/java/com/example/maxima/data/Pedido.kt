@@ -30,7 +30,7 @@ data class Pedido(
 
     @SerializedName("critica")
     @ColumnInfo(name = "critica")
-    val critica: String,
+    val critica: String?,
 
     @SerializedName("tipo")
     @ColumnInfo(name = "tipo")
@@ -38,6 +38,6 @@ data class Pedido(
 
     @SerializedName("legendas")
     @ColumnInfo(name = "legendas")
-    val legendas: List<String>,
+    val legendas: List<String>?,
 
 )
