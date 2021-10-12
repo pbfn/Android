@@ -1,14 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
     tools:context=".fragments.DadosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Dados" />
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="7dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/text_view_title_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dados do cliente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#C7C7C7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/text_view_name_cliente"
+                style="@style/text_view_subtitle_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Nome cliente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/text_view_fantasia"
+                style="@style/text_view_fantasia_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fantasia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_name_cliente" />
+
+            <TextView
+                android:id="@+id/text_cpf"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="CPF:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_fantasia" />
+
+            <TextView
+
+                android:id="@+id/text_view_cpf"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF CLIENTE"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cpf"
+                app:layout_constraintStart_toEndOf="@+id/text_cpf" />
+
+            <TextView
+                android:id="@+id/text_cpnj"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="CNPJ:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_cpf" />
+
+            <TextView
+                android:id="@+id/text_view_cnpj"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="CNPJ CLIENTE"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cpnj"
+                app:layout_constraintStart_toEndOf="@+id/text_cpnj" />
+
+
+            <TextView
+                android:id="@+id/text_ramo"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ramo de atividade:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_cpnj" />
+
+            <TextView
+                android:id="@+id/text_view_ramo_atividade"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="RAMO ATIVIDADE CLIENTE"
+                app:layout_constraintBottom_toBottomOf="@+id/text_ramo"
+                app:layout_constraintStart_toEndOf="@+id/text_ramo" />
+
+
+            <TextView
+                android:id="@+id/text_enderecos"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Endereços:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_ramo" />
+
+            <TextView
+                android:id="@+id/text_view_enderecos"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="ENDERECOS CLIENTE"
+                app:layout_constraintBottom_toBottomOf="@+id/text_enderecos"
+                app:layout_constraintStart_toEndOf="@+id/text_enderecos" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
