@@ -1,5 +1,6 @@
 package com.example.maxima.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -34,7 +35,8 @@ class SplashActivity : AppCompatActivity() {
         })
 
         splashViewModel.pedido.observe(this, {
-            //IR PARA PROXIMA TELA
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         })
     }
 

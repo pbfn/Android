@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue_top">#00386C</color>
-    <color name="blue_action_bar">#673AB7</color>
+    <color name="blue_action_bar">#186096</color>
+    <color name="backgroud_card">#F1F1F1</color>
 </resources>

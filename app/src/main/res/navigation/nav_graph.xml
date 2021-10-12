@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dadosFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.maxima.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.maxima.activity.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/alvarasFragment"
+        android:name="com.example.maxima.fragments.AlvarasFragment"
+        android:label="Alvarás"
+        tools:layout="@layout/fragment_alvaras" />
+    <fragment
+        android:id="@+id/dadosFragment"
+        android:name="com.example.maxima.fragments.DadosFragment"
+        android:label="Dados do cliente"
+        tools:layout="@layout/fragment_dados" />
+    <fragment
+        android:id="@+id/historicoFragment"
+        android:name="com.example.maxima.fragments.HistoricoFragment"
+        android:label="Hist. de pedidos"
+        tools:layout="@layout/fragment_historico" />
+    <action android:id="@+id/action_global_alvarasFragment" app:destination="@id/alvarasFragment" />
+    <action
+        android:id="@+id/action_global_historicoFragment"
+        app:destination="@id/historicoFragment"
+        app:popUpTo="@id/dadosFragment" />
+    <action
+        android:id="@+id/action_global_dadosFragment"
+        app:destination="@id/dadosFragment"
+        app:popUpTo="@id/mainActivity"
+        app:popUpToInclusive="true" />
+</navigation>
