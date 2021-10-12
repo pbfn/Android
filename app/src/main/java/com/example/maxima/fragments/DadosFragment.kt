@@ -60,7 +60,12 @@ class DadosFragment : Fragment() {
             textViewCnpj.text = cliente.cnpj
             textViewRamoAtividade.text = cliente.ramo_atividade
             textViewEnderecos.text = cliente.endereco
+            textViewNomeContato.text = cliente.contatos[0].nome
+            textViewTelefone.text = cliente.contatos[0].telefone
+            textViewEmail.text = cliente.contatos[0].e_mail
         }
+
+
     }
 
 }
