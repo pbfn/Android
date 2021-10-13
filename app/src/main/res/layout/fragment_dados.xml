@@ -162,7 +162,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_contatos"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:elevation="8dp"
         app:cardCornerRadius="5dp"
@@ -356,6 +356,46 @@
                 android:text="Data conjuge"
                 app:layout_constraintBottom_toBottomOf="@+id/text_data_nasc_conjuge"
                 app:layout_constraintStart_toEndOf="@+id/text_data_nasc_conjuge" />
+
+            <TextView
+                android:id="@+id/text_tipo"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tipo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_data_nasc_conjuge" />
+
+            <TextView
+                android:id="@+id/text_view_tipo"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Tipo cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_tipo"
+                app:layout_constraintStart_toEndOf="@+id/text_tipo" />
+
+            <TextView
+                android:id="@+id/text_time"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_tipo" />
+
+            <TextView
+                android:id="@+id/text_view_time"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Time do cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_time"
+                app:layout_constraintStart_toEndOf="@+id/text_time" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
