@@ -64,11 +64,9 @@ class SplashViewModel : ViewModel() {
     }
 
     private fun insertPedidoDB(db: AppDataBase, pedidos: ResponsePedido) {
-
         for (pedido in pedidos.pedidos) {
             db.pedidoDao().insertAll(pedido)
         }
-
     }
 
 }

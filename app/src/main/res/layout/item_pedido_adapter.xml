@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_view_status"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_maxima_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_numpeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N°Ped. Rca/ERP:"
+        app:layout_constraintStart_toEndOf="@+id/image_view_status"
+        app:layout_constraintTop_toTopOf="@+id/image_view_status" />
+
+    <TextView
+        android:id="@+id/text_view_numpeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Pedido/Pedido RCA"
+        app:layout_constraintBottom_toBottomOf="@+id/text_numpeds"
+        app:layout_constraintStart_toEndOf="@+id/text_numpeds" />
+
+
+    <TextView
+        android:id="@+id/text_view_hora_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hora:minuto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_legenda_corte"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_maxima_legenda_corte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_hora_pedido" />
+
+    <ImageView
+        android:id="@+id/image_view_legenda_falta"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_maxima_legenda_falta"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_legenda_corte"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_hora_pedido" />
+
+    <ImageView
+        android:id="@+id/image_view_legenda_cancelado"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_maxima_legenda_cancelamento"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_legenda_falta"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_hora_pedido" />
+
+    <ImageView
+        android:id="@+id/image_view_legenda_devolucao"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_maxima_legenda_devolucao"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_legenda_cancelado"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_hora_pedido" />
+
+    <ImageView
+        android:id="@+id/image_view_legenda_telemarketing"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/ic_maxima_legenda_telemarketing"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_legenda_devolucao"
+        app:layout_constraintTop_toTopOf="@+id/text_view_hora_pedido" />
+
+    <TextView
+        android:id="@+id/text_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente: "
+
+        app:layout_constraintStart_toStartOf="@+id/text_numpeds"
+        app:layout_constraintTop_toBottomOf="@+id/text_numpeds" />
+
+    <TextView
+        android:id="@+id/text_view_cod_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Codcli - Cliente"
+        app:layout_constraintBottom_toBottomOf="@+id/text_cliente"
+        app:layout_constraintStart_toEndOf="@+id/text_cliente" />
+
+    <TextView
+        android:id="@+id/text_view_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="@+id/text_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/text_cliente" />
+
+    <TextView
+        android:id="@+id/text_critica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Critica"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_status"
+        app:layout_constraintStart_toEndOf="@+id/text_view_status" />
+
+    <ImageView
+        android:id="@+id/image_view_critica_aguardando"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_maxima_aguardando_critica"
+        app:layout_constraintBottom_toBottomOf="@+id/text_critica"
+        app:layout_constraintStart_toEndOf="@+id/text_critica" />
+
+
+    <ImageView
+        android:id="@+id/image_view_critica_sucesso"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_maxima_critica_sucesso"
+        app:layout_constraintBottom_toBottomOf="@+id/text_critica"
+        app:layout_constraintStart_toEndOf="@+id/image_view_critica_aguardando" />
+
+    <ImageView
+        android:id="@+id/image_view_critica_parcial"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_maxima_critica_alerta"
+        app:layout_constraintBottom_toBottomOf="@+id/text_critica"
+        app:layout_constraintStart_toEndOf="@+id/image_view_critica_sucesso" />
+
+    <ImageView
+        android:id="@+id/image_view_critica_total"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_maxima_legenda_falta"
+        app:layout_constraintBottom_toBottomOf="@+id/text_critica"
+        app:layout_constraintStart_toEndOf="@+id/image_view_critica_parcial" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

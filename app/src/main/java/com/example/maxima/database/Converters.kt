@@ -28,8 +28,12 @@ class Converters {
 
     @TypeConverter
     fun jsonToLisString(value: String): List<String> {
-        val objects = Gson().fromJson(value, Array<String>::class.java) as Array<String>
-        val list = objects.toList()
-        return list
+        return if(value == "[]" || value == "null") {
+            mutableListOf("Não possui legenda")
+        }else {
+            val objects = Gson().fromJson(value, Array<String>::class.java) as Array<String>
+            objects.toList()
+        }
+
     }
 }

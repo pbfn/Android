@@ -10,7 +10,7 @@ data class Pedido(
 
     @SerializedName("numero_ped_Rca")
     @PrimaryKey(autoGenerate = false)
-    val id: Int,
+    val numero_ped_Rca: Int,
 
     @SerializedName("numero_ped_erp")
     @ColumnInfo(name = "numero_ped_erp")
@@ -32,12 +32,16 @@ data class Pedido(
     @ColumnInfo(name = "critica")
     val critica: String?,
 
+    @SerializedName("status")
+    @ColumnInfo(name = "status")
+    val status: String?,
+
     @SerializedName("tipo")
     @ColumnInfo(name = "tipo")
     val tipo: String,
 
     @SerializedName("legendas")
     @ColumnInfo(name = "legendas")
-    val legendas: List<String>?,
+    val legendas: List<String>,
 
-)
+    )

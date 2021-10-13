@@ -104,4 +104,8 @@ dependencies {
     // Jetpack Compose Integration
     implementation "androidx.navigation:navigation-compose:2.4.0-alpha10"
 
+
+    //CIRCLE IMAGE VIEW
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }

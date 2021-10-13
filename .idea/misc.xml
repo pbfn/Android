@@ -14,6 +14,8 @@
         <entry key="..\:/Maxima/app/src/main/res/layout/fragment_alvaras.xml" value="0.3625" />
         <entry key="..\:/Maxima/app/src/main/res/layout/fragment_dados.xml" value="0.5" />
         <entry key="..\:/Maxima/app/src/main/res/layout/fragment_historico.xml" value="0.3625" />
+        <entry key="..\:/Maxima/app/src/main/res/layout/item_pedido.xml" value="0.35833333333333334" />
+        <entry key="..\:/Maxima/app/src/main/res/layout/item_pedido_adapter.xml" value="1.5" />
         <entry key="..\:/Maxima/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.3625" />
       </map>
     </option>
