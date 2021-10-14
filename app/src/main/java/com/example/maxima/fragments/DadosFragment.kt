@@ -8,8 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.maxima.R
+import com.example.maxima.adapters.AdapterContatos
 import com.example.maxima.data.Cliente
+import com.example.maxima.data.Contatos
 import com.example.maxima.databinding.FragmentDadosBinding
 import com.example.maxima.viewModel.FragmentDadosViewModel
 import com.google.android.material.snackbar.Snackbar
@@ -20,6 +23,7 @@ import java.util.*
 class DadosFragment : Fragment() {
 
     private lateinit var binding: FragmentDadosBinding
+    private lateinit var adapterContatos: AdapterContatos
     private lateinit var fragmentDadosViewModel: FragmentDadosViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,16 +69,26 @@ class DadosFragment : Fragment() {
             textViewCnpj.text = cliente.cnpj
             textViewRamoAtividade.text = cliente.ramo_atividade
             textViewEnderecos.text = cliente.endereco
-            textViewNomeContato.text = cliente.contatos[0].nome
-            textViewTelefone.text = cliente.contatos[0].telefone
-            textViewEmail.text = cliente.contatos[0].e_mail
-            textViewTipo.text = cliente.contatos[0].tipo
-            textViewTime.text = cliente.contatos[0].time
+            setupRecyclerView(cliente.contatos)
+//            textViewNomeContato.text = cliente.contatos[0].nome
+//            textViewTelefone.text = cliente.contatos[0].telefone
+//            textViewEmail.text = cliente.contatos[0].e_mail
+//            textViewTipo.text = cliente.contatos[0].tipo
+//            textViewTime.text = cliente.contatos[0].time
 
             buttonStatus.setOnClickListener {
                 setSnackBar(cliente.status)
             }
 
+        }
+    }
+
+    private fun setupRecyclerView(contatos: List<Contatos>) {
+        val layout = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        adapterContatos = AdapterContatos(contatos)
+        binding.recyclerContatos.apply {
+            layoutManager = layout
+            adapter = adapterContatos
         }
     }
 

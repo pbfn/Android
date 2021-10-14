@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/text_view_nome_contato"
+                style="@style/text_view_subtitle_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome Contato"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_telefone"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Telefone:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_nome_contato" />
+
+            <TextView
+                android:id="@+id/text_view_telefone"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Telefone do cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_telefone"
+                app:layout_constraintStart_toEndOf="@+id/text_telefone" />
+
+            <ImageView
+                android:id="@+id/image_view_telefone"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_maxima_telefone"
+                app:layout_constraintBottom_toBottomOf="@+id/text_view_telefone"
+                app:layout_constraintStart_toEndOf="@+id/text_view_telefone" />
+
+            <TextView
+                android:id="@+id/text_celular"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Celular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_telefone" />
+
+            <TextView
+                android:id="@+id/text_view_celular"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Celular do cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_celular"
+                app:layout_constraintStart_toEndOf="@+id/text_celular" />
+
+
+            <ImageView
+                android:id="@+id/image_view_telefone_2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_maxima_telefone"
+                app:layout_constraintBottom_toBottomOf="@+id/text_view_celular"
+                app:layout_constraintStart_toEndOf="@+id/text_view_celular" />
+
+            <TextView
+                android:id="@+id/text_email"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_celular" />
+
+            <TextView
+                android:id="@+id/text_view_email"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Email cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_email"
+                app:layout_constraintStart_toEndOf="@+id/text_email" />
+
+            <ImageView
+                android:id="@+id/image_view_email"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_maxima_email"
+                app:layout_constraintBottom_toBottomOf="@+id/text_view_email"
+                app:layout_constraintStart_toEndOf="@+id/text_view_email" />
+
+            <TextView
+                android:id="@+id/text_data_nasc"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Data Nasc.:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_email" />
+
+            <TextView
+                android:id="@+id/text_view_data_nasc"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Data Nacimento cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_data_nasc"
+                app:layout_constraintStart_toEndOf="@+id/text_data_nasc" />
+
+            <TextView
+                android:id="@+id/text_data_conjuge"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cônjuge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_data_nasc" />
+
+            <TextView
+                android:id="@+id/text_view_conjuge"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Nome conjuge"
+                app:layout_constraintBottom_toBottomOf="@+id/text_data_conjuge"
+                app:layout_constraintStart_toEndOf="@+id/text_data_conjuge" />
+
+
+            <TextView
+                android:id="@+id/text_data_nasc_conjuge"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Data Nasc. Cônjuge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_data_conjuge" />
+
+            <TextView
+                android:id="@+id/text_view_data_nasc_conjuge"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Data conjuge"
+                app:layout_constraintBottom_toBottomOf="@+id/text_data_nasc_conjuge"
+                app:layout_constraintStart_toEndOf="@+id/text_data_nasc_conjuge" />
+
+            <TextView
+                android:id="@+id/text_tipo"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tipo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_data_nasc_conjuge" />
+
+            <TextView
+                android:id="@+id/text_view_tipo"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Tipo cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_tipo"
+                app:layout_constraintStart_toEndOf="@+id/text_tipo" />
+
+            <TextView
+                android:id="@+id/text_time"
+                style="@style/text_view_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_tipo" />
+
+            <TextView
+                android:id="@+id/text_view_time"
+                style="@style/text_view_text_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Time do cliente"
+                app:layout_constraintBottom_toBottomOf="@+id/text_time"
+                app:layout_constraintStart_toEndOf="@+id/text_time" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
