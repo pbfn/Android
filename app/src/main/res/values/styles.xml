@@ -32,4 +32,25 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+
+    <style name="text_view_text_title_legenda" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/santral_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_view_text_subtitle_legenda" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:fontFamily">@font/santral_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_view_text_text_legenda" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:fontFamily">@font/santral_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 </resources>

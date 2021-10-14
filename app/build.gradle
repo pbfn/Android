@@ -108,5 +108,5 @@ dependencies {
     //CIRCLE IMAGE VIEW
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
-
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 }

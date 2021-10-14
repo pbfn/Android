@@ -1,9 +1,12 @@
 package com.example.maxima.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.amulyakhare.textdrawable.TextDrawable
 import com.example.maxima.data.Pedido
 import com.example.maxima.databinding.ItemPedidoAdapterBinding
 import java.text.SimpleDateFormat
@@ -106,4 +109,9 @@ class AdapterPedido(private val pedidos: List<Pedido>) :
             dateTimeFormat.format(dataFormatada)
         }
     }
+
+
+
+
+
 }
