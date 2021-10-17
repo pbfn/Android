@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity() {
         actionBar?.setDisplayShowCustomEnabled(true)
         actionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
         actionBar?.setCustomView(R.layout.action_bar_main)
-        //actionBar?.setDisplayHomeAsUpEnabled(true)
-        //actionBar?.setHomeAsUpIndicator(R.drawable.ic_round_arrow_back_ios_24)
     }
 
     private fun setView(){
@@ -61,5 +59,8 @@ class MainActivity : AppCompatActivity() {
         setView()
     }
 
+    override fun onBackPressed() {
+        finish()
+    }
 
 }

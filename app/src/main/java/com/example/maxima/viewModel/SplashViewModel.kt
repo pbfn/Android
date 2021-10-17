@@ -1,9 +1,12 @@
 package com.example.maxima.viewModel
 
+import android.app.Application
 import android.content.Context
+import android.net.ConnectivityManager
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.work.WorkManager
 import com.example.maxima.api.ApiListener
 import com.example.maxima.connection.RoomConnection
 import com.example.maxima.data.Cliente
@@ -13,7 +16,7 @@ import com.example.maxima.database.AppDataBase
 import com.example.maxima.repository.ClienteRepositoryImp
 import com.example.maxima.repository.PedidoRepositoryImp
 
-class SplashViewModel : ViewModel() {
+class SplashViewModel() : ViewModel() {
 
 
     private val repositoryCliente = ClienteRepositoryImp()
@@ -27,6 +30,13 @@ class SplashViewModel : ViewModel() {
 
     private var _errorMessage = MutableLiveData<String>()
     var errorMessage: LiveData<String> = _errorMessage
+
+
+    private var _clienteFromDB = MutableLiveData<List<Cliente>>()
+    var clienteFromDB: LiveData<List<Cliente>> = _clienteFromDB
+
+    private var _isOnline = MutableLiveData<Boolean>()
+    var isOnline: LiveData<Boolean> = _isOnline
 
 
     fun getCliente(context: Context) {
@@ -67,6 +77,16 @@ class SplashViewModel : ViewModel() {
         for (pedido in pedidos.pedidos) {
             db.pedidoDao().insertAll(pedido)
         }
+    }
+
+    fun getFromDB(context: Context) {
+        val db = RoomConnection(context).db()
+        _clienteFromDB.value = db.clienteDao().getAll()
+    }
+
+    fun getConnection(manager: ConnectivityManager) {
+        _isOnline.value = (manager.activeNetworkInfo != null &&
+                manager.activeNetworkInfo!!.isConnectedOrConnecting)
     }
 
 }

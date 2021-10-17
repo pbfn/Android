@@ -109,4 +109,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+    def  work_version = "2.3.4"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
 }

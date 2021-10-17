@@ -42,8 +42,6 @@ class HomeActivity : AppCompatActivity() {
 
         binding.bottomNavigation.setupWithNavController(navController)
 
-        //setToolbar()
-        //initBottomNavigation()
 
     }
 
@@ -51,47 +49,6 @@ class HomeActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
-
-//    private fun setToolbar() {
-//        val actionBar = supportActionBar
-//        actionBar?.setDisplayShowCustomEnabled(true)
-//        actionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
-//        actionBar?.setCustomView(R.layout.action_bar_main)
-//        actionBar?.setDisplayHomeAsUpEnabled(true)
-//        actionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_arrow_back_24)
-//    }
-
-//    private fun makeCurrentFragment(fragment: Fragment) =
-//        supportFragmentManager.beginTransaction().apply {
-//            replace(R.id.fl_container, fragment)
-//            commit()
-//        }
-//
-//    private fun initBottomNavigation() {
-//        val dadosFragment = DadosFragment()
-//        val alvarasFragment = AlvarasFragment()
-//        val historicoFragment = HistoricoFragment()
-//
-//
-//        makeCurrentFragment(dadosFragment)
-//        binding.bottomNavigationView.setOnItemSelectedListener {
-//            when (it.itemId) {
-//                R.id.ic_dados -> makeCurrentFragment(dadosFragment)
-//                R.id.ic_histo -> makeCurrentFragment(historicoFragment)
-//                R.id.ic_alvaras -> makeCurrentFragment(alvarasFragment)
-//            }
-//            true
-//        }
-//
-//        binding.bottomNavigationView.setOnItemReselectedListener {
-//            when (it.itemId) {
-//                R.id.ic_dados -> makeCurrentFragment(dadosFragment)
-//                R.id.ic_histo -> makeCurrentFragment(historicoFragment)
-//                R.id.ic_alvaras -> makeCurrentFragment(alvarasFragment)
-//            }
-//        }
-//
-//    }
 
 
 }
