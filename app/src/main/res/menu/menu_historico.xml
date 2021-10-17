@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/ic_menu_legendas"
         android:icon="@drawable/ic_baseline_local_offer_24"
         android:title="Legendas" />
+
+    <item
+        android:icon="@drawable/ic_baseline_search_24"
+        android:id="@+id/search_button"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="Pesquisar" />
 </menu>
