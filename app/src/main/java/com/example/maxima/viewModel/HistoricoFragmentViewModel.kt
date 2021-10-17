@@ -17,6 +17,7 @@ class HistoricoFragmentViewModel : ViewModel() {
     fun getPedidos(context: Context) {
         val db = RoomConnection(context).db()
         _pedidos.value = db.pedidoDao().getAll()
+        db.close()
     }
 
 }

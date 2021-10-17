@@ -16,6 +16,7 @@ class FragmentDadosViewModel : ViewModel() {
     fun getCliente(context: Context) {
         val db = RoomConnection(context).db()
         _cliente.value = db.clienteDao().getAll()
+        db.close()
     }
 
 }

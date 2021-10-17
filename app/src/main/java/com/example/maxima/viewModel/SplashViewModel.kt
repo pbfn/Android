@@ -45,10 +45,12 @@ class SplashViewModel() : ViewModel() {
             override fun onSucess(body: ResponseCliente) {
                 _cliente.value = body
                 insertDB(db, body.clientes)
+                db.close()
             }
 
             override fun onFailure(message: String) {
                 _errorMessage.value = message
+                db.close()
             }
 
         })
@@ -60,10 +62,12 @@ class SplashViewModel() : ViewModel() {
             override fun onSucess(body: ResponsePedido) {
                 _pedidos.value = body
                 insertPedidoDB(db, body)
+                db.close()
             }
 
             override fun onFailure(message: String) {
                 _errorMessage.value = message
+                db.close()
             }
 
         })
@@ -71,17 +75,20 @@ class SplashViewModel() : ViewModel() {
 
     private fun insertDB(db: AppDataBase, cliente: Cliente) {
         db.clienteDao().insertAll(cliente)
+        db.close()
     }
 
     private fun insertPedidoDB(db: AppDataBase, pedidos: ResponsePedido) {
         for (pedido in pedidos.pedidos) {
             db.pedidoDao().insertAll(pedido)
         }
+        db.close()
     }
 
     fun getFromDB(context: Context) {
         val db = RoomConnection(context).db()
         _clienteFromDB.value = db.clienteDao().getAll()
+        db.close()
     }
 
     fun getConnection(manager: ConnectivityManager) {
