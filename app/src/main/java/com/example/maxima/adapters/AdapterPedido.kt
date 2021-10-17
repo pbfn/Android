@@ -68,6 +68,7 @@ class AdapterPedido(private val pedidos: List<Pedido>) :
         holder.imageViewCriticaSucesso.visibility = View.GONE
         holder.imageViewCriticaParcial.visibility = View.GONE
         holder.imageViewCriticaTotal.visibility = View.GONE
+
         if (pedido.numero_ped_Rca == 542188) {
             pedido.status
         }
@@ -87,6 +88,8 @@ class AdapterPedido(private val pedidos: List<Pedido>) :
                 else ->
                     holder.textViewCritica.visibility = View.GONE
             }
+        }else{
+            holder.textViewCritica.visibility = View.GONE
         }
 
         if (pedido.status?.compareTo("Em processamento", true) == 0) {
