@@ -33,7 +33,7 @@
                 style="@style/text_view_title_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dados do cliente"
+                android:text="@string/dados_do_cliente"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +54,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                android:text="Nome cliente"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -65,7 +64,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Fantasia"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_name_cliente" />
@@ -76,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="CPF:"
+                android:text="@string/cpf"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_fantasia" />
 
@@ -86,7 +84,6 @@
                 style="@style/text_view_text_response"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CPF CLIENTE"
                 app:layout_constraintBottom_toBottomOf="@+id/text_cpf"
                 app:layout_constraintStart_toEndOf="@+id/text_cpf" />
 
@@ -96,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="CNPJ:"
+                android:text="@string/cnpj"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_cpf" />
 
@@ -106,7 +103,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="CNPJ CLIENTE"
                 app:layout_constraintBottom_toBottomOf="@+id/text_cpnj"
                 app:layout_constraintStart_toEndOf="@+id/text_cpnj" />
 
@@ -117,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Ramo de atividade:"
+                android:text="@string/ramo_de_atividade"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_cpnj" />
 
@@ -127,7 +123,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="RAMO ATIVIDADE CLIENTE"
                 app:layout_constraintBottom_toBottomOf="@+id/text_ramo"
                 app:layout_constraintStart_toEndOf="@+id/text_ramo" />
 
@@ -138,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Endereços:"
+                android:text="@string/enderecos"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_ramo" />
 
@@ -148,7 +143,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="ENDERECOS CLIENTE"
                 app:layout_constraintBottom_toBottomOf="@+id/text_enderecos"
                 app:layout_constraintStart_toEndOf="@+id/text_enderecos" />
 
@@ -181,7 +175,7 @@
                 style="@style/text_view_title_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contatos"
+                android:text="@string/contatos"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -218,7 +212,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#638735"
-        android:text="Verificar status do cliente"
+        android:text="@string/verificar_status_do_cliente"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

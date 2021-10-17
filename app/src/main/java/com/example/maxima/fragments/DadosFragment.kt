@@ -70,12 +70,6 @@ class DadosFragment : Fragment() {
             textViewRamoAtividade.text = cliente.ramo_atividade
             textViewEnderecos.text = cliente.endereco
             setupRecyclerView(cliente.contatos)
-//            textViewNomeContato.text = cliente.contatos[0].nome
-//            textViewTelefone.text = cliente.contatos[0].telefone
-//            textViewEmail.text = cliente.contatos[0].e_mail
-//            textViewTipo.text = cliente.contatos[0].tipo
-//            textViewTime.text = cliente.contatos[0].time
-
             buttonStatus.setOnClickListener {
                 setSnackBar(cliente.status)
             }
@@ -110,6 +104,4 @@ class DadosFragment : Fragment() {
         val dateTimeFormat = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
         return dateTimeFormat.format(date)
     }
-
-
 }

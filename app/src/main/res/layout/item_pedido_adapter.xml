@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="N°Ped. Rca/ERP:"
+        android:text="@string/n_ped_rca_erp"
         app:layout_constraintStart_toEndOf="@+id/image_view_status"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,7 +34,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-        android:text="Pedido/Pedido RCA"
         app:layout_constraintBottom_toBottomOf="@+id/text_numpeds"
         app:layout_constraintEnd_toStartOf="@+id/text_view_hora_pedido"
         app:layout_constraintStart_toEndOf="@+id/text_numpeds"
@@ -47,8 +46,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
-        android:text="Hora:minuto"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_view_numpeds" />
 
@@ -104,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Cliente: "
+        android:text="@string/cliente"
         app:layout_constraintStart_toStartOf="@+id/text_numpeds"
         app:layout_constraintTop_toBottomOf="@+id/text_numpeds" />
 
@@ -113,8 +110,7 @@
         style="@style/text_view_item_pedido_response"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Codcli - Cliente"
+        android:layout_marginStart="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/text_cliente"
         app:layout_constraintStart_toEndOf="@+id/text_cliente"
         app:layout_constraintTop_toTopOf="@+id/text_cliente" />
@@ -126,8 +122,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Status"
-
         app:layout_constraintStart_toStartOf="@+id/text_cliente"
         app:layout_constraintTop_toBottomOf="@+id/text_cliente" />
 
@@ -136,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:text="Critica"
+        android:text="@string/cr_tica"
         app:layout_constraintBottom_toBottomOf="@+id/text_view_status"
         app:layout_constraintStart_toEndOf="@+id/text_view_status" />
 
