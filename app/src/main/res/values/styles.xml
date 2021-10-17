@@ -53,4 +53,19 @@
         <item name="android:textSize">14sp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+
+    <style name="text_view_item_pedido_type" parent="Widget.AppCompat.TextView">
+
+        <item name="android:fontFamily">@font/santral_medium</item>
+        <item name="android:textColor">@color/item_pedido_type</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="text_view_item_pedido_response" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/santral_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 </resources>

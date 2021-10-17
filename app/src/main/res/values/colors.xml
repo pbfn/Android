@@ -12,4 +12,7 @@
     <color name="blue_action_bar">#186096</color>
     <color name="backgroud_card">#F1F1F1</color>
     <color name="text_action">#638735</color>
+    <color name="item_pedido_type">#95989A</color>
+    <color name="separator">#9E9E9E</color>
+
 </resources>

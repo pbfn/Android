@@ -3,6 +3,8 @@ package com.example.maxima.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.maxima.Entities.EntityCritica
+import com.example.maxima.Entities.EntityLegenda
 import com.google.gson.annotations.SerializedName
 
 @Entity
@@ -30,7 +32,7 @@ data class Pedido(
 
     @SerializedName("critica")
     @ColumnInfo(name = "critica")
-    val critica: String?,
+    val critica: EntityCritica?,
 
     @SerializedName("status")
     @ColumnInfo(name = "status")
@@ -42,6 +44,6 @@ data class Pedido(
 
     @SerializedName("legendas")
     @ColumnInfo(name = "legendas")
-    val legendas: List<String>,
+    val legendas: List<EntityLegenda>,
 
     )

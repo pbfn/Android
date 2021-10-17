@@ -10,11 +10,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.amulyakhare.textdrawable.TextDrawable
 import com.example.maxima.R
 import com.example.maxima.adapters.AdapterPedido
 import com.example.maxima.data.Pedido
+import com.example.maxima.databinding.AlertDialogLegendasBinding
 import com.example.maxima.databinding.FragmentHistoricoBinding
 import com.example.maxima.viewModel.HistoricoFragmentViewModel
 
@@ -40,11 +42,10 @@ class HistoricoFragment : Fragment() {
 
             R.id.ic_menu_legendas -> {
                 val builder = AlertDialog.Builder(requireContext())
-                builder.setNegativeButton("Fechar") { _,_ ->
+                builder.setNegativeButton("Fechar") { _, _ ->
 
                 }
                 builder.setView(R.layout.alert_dialog_legendas)
-               // desenharLetraCircular(R.layout.alert_dialog_legendas,)
                 val dialog: AlertDialog = builder.create()
                 dialog.show()
             }
@@ -92,19 +93,6 @@ class HistoricoFragment : Fragment() {
             layoutManager = layout
             adapter = adapterPedido
         }
-    }
-
-
-    private fun desenharLetraCircular(viewRaiz: View, idImvLetra: Int, idLetraDefault: Int, corPreenchimento: String, letra: String = "") {
-        val cor = if (corPreenchimento == "") "#95989A" else corPreenchimento
-
-        val drawable = TextDrawable.builder()
-            .beginConfig()
-            .bold()
-            .endConfig()
-            .buildRound(letra,
-                Color.parseColor(cor))
-        viewRaiz.findViewById<ImageView>(idImvLetra).setImageDrawable(drawable)
     }
 
 }

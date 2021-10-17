@@ -36,7 +36,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_processamento"
             android:src="@drawable/ic_maxima_em_processamento"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_staus" />
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_recusado"
             android:gravity="center"
             android:text="!"
             android:textColor="@color/white"
@@ -81,9 +81,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_pendente"
             android:gravity="center"
             android:text="P"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_recusado_status" />
 
@@ -92,6 +93,7 @@
             style="@style/text_view_text_text_legenda"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+
             android:text="Pedido no ERP Pendente"
             app:layout_constraintBottom_toBottomOf="@+id/text_view_pendente_status"
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,9 +106,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_bloqueado"
             android:gravity="center"
             android:text="B"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_pendente_status" />
 
@@ -127,9 +130,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_liberado"
             android:gravity="center"
             android:text="L"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_bloqueado_status" />
 
@@ -151,9 +155,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_montado"
             android:gravity="center"
             android:text="M"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_liberado_status" />
 
@@ -174,9 +179,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_faturado"
             android:gravity="center"
             android:text="F"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_montado_status" />
 
@@ -197,9 +203,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_cancelado"
             android:gravity="center"
             android:text="C"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_faturado_status" />
 
@@ -220,9 +227,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/circle_orcamento"
             android:gravity="center"
             android:text="C"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_cancelado_status" />
 

@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_bloqueado.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_cancelado.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_faturado.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_liberado.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_montado.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_orcamento.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_pendente.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_processamento.xml" value="0.37447916666666664" />
+        <entry key="..\:/Maxima/app/src/main/res/drawable-v24/circle_recusado.xml" value="0.37447916666666664" />
         <entry key="..\:/Maxima/app/src/main/res/drawable/background_splash.xml" value="0.37864583333333335" />
         <entry key="..\:/Maxima/app/src/main/res/drawable/card_teste.xml" value="0.37864583333333335" />
         <entry key="..\:/Maxima/app/src/main/res/drawable/circle.xml" value="0.37447916666666664" />
@@ -18,7 +27,7 @@
         <entry key="..\:/Maxima/app/src/main/res/layout/fragment_historico.xml" value="0.3625" />
         <entry key="..\:/Maxima/app/src/main/res/layout/item_contato_adapter.xml" value="0.25" />
         <entry key="..\:/Maxima/app/src/main/res/layout/item_pedido.xml" value="0.35833333333333334" />
-        <entry key="..\:/Maxima/app/src/main/res/layout/item_pedido_adapter.xml" value="1.25" />
+        <entry key="..\:/Maxima/app/src/main/res/layout/item_pedido_adapter.xml" value="0.7984581497797357" />
         <entry key="..\:/Maxima/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.3625" />
         <entry key="..\:/Maxima/app/src/main/res/menu/menu_historico.xml" value="0.35833333333333334" />
       </map>
